@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# 3주차 과제: react로 인기투표 사이트 만들기
+1886px 프론트엔드 스터디 세번째 과제입니다
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# INTRO
+안녕하세요🙂 프론트엔드 멘토링을 맡은 함초롬입니다.
 
-## Available Scripts
+세번째 과제는 리액트로 인기 투표 앱 만들기를 준비했습니다. 본 과제를 통해 리액트에 익숙해지셨으면 좋겠습니다.
 
-In the project directory, you can run:
+개발에는 정답이 없습니다. 각자 고민하고 각자가 생각하는 가장 좋은 방식으로 본 과제를 구현해주시기 바랍니다.
 
-### `yarn start`
+모르는 게 생기면 먼저 고민하고 공부해 본 다음 이후에도 잘 모르겠으면 디스코드 질문방에 질문합니다. 모르는 내용을 정리해 전체 세션 시간에 공유하고 같이 답을 찾아갑니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# 과제 설명
+## 과제 목표
+- 리액트로 개발해봅니다.
+- 컴포넌트 단위 개발을 이해해봅니다.
+- 코드의 재사용성을 높이는 법을 이해해봅니다.
+- React 컴포넌트의 생명주기를 이해하고 React Hooks를 사용해봅니다.
+- props와 state를 이해하고 적용해봅니다.
+- ```styled-components``` 사용 방법을 알고 익숙해집니다.
+- 여러 길이 단위를 알아봅니다.
+- 코드 포매터가 무엇인지 알고, ```Prettier```를 도입해 사용합니다. [(참고자료)](https://crong-dev.tistory.com/67)
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 과제 요구사항
+![image](https://user-images.githubusercontent.com/52379950/132940117-c7e021a0-89c4-4e12-aa73-096590d50c4d.png)
 
-### `yarn build`
+- 리액트를 사용해 인기 투표 앱을 위와 같이 구현합니다. ([결과 화면](https://react-vote-1886px.vercel.app))
+- 스타일링 시 ```styled-components```를 사용합니다. 길이 단위는 rem을 사용합니다.
+- props와 state를 둘 다 사용합니다.
+- 사용자 프로필 카드 UI를 위 화면과 같이 구현합니다.
+- 좋아요를 눌렀을 때 좋아요 수가 증가되도록 합니다.
+- 기본 포맷은 지켜주시되, 스타일링은 자유롭게 해도 좋습니다. (색, 폰트 등)
+- 주어진 파일 이외에 새 파일을 만들지 않습니다.
+- 개발을 하다 기억이 안 나거나 잘 모르겠는 부분은 추가로 공부하고 정리합니다.
+- git commit 할 때 한번에 하는 것이 아니라 기능별로 commit 합니다. 
+- ```VSCode```와 ```Prettier```을 사용합니다. (저장 시 format 되도록 설정합니다.)
+- ```vercel```을 사용해 배포합니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 생각해 볼 질문
+1. JSX는 무엇일까요?
+2. 컴포넌트는 무엇이고, 컴포넌트 단위로 개발하는 이유는 무엇일까요?
+3. state와 props는 무엇일까요?
+4. 리액트 훅은 무엇일까요?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## 과제 수행 방법
+1. 본 레포지토리를 fork합니다.
+2. fork된 레포지토리를 ```git clone```을 통해 로컬에 다운받습니다.
+3. 로컬에 다운 받은 이후 해당 디렉토리로 이동해 ```npm install```을 해 필요한 패키지를 설치하고 ```npm start```로 시작합니다.
+4. 코드 에디터는 ```VSCode```를 사용해 작업합니다.
+5. 브랜치를 자기 이름으로 판 다음 해당 브랜치에서 작업합니다. (예: ```git checkout -b chorom```)
+6. 로컬에서 개발한 작업물을 원격 레포지토리에 ```push```합니다.
+7. 완성한 결과물을 본 레포지토리에 ```pull request```로 보냅니다.
+8. 코드 리뷰를 받고 수정합니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## FYI
+```create-react-app```을 사용해 시작한 프로젝트입니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## PR 템플릿
+```
+제목: [과제 {과제번호}] {이름} 과제 제출합니다
+내용:
+배포한 링크와 블로그 포스팅 링크를 첨부합니다.
+과제를 하며 배운 내용, 고민한 내용, 어려웠던 내용, 추가로 구현하고 싶은 내용 등을 정리합니다.
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 과제 기한
+2021년 9월 18일 토요일 21시
