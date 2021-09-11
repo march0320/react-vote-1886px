@@ -1,8 +1,24 @@
+import { createGlobalStyle } from "styled-components";
+import ProfileList from "./components/ProfileList";
+
+const GlobalStyle = createGlobalStyle`
+  *{  
+    box-sizing: border-box;
+  }
+  html {
+    font-size : 10px;
+  }
+  body {
+    background-color : #F6FFDB;
+  }
+`;
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <>
+      <GlobalStyle />
+      <ProfileList />
+    </>
   );
 }
 
